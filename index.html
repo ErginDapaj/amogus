@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./media/amogus.png">
+    <title>Amogus</title>
+</head>
+
+<body>
+    <p class="paragraf1">Impostor</p>
+    <img id="chars" class="chars" src="media/${chars}" alt="Amogus" height="550px">
+    <!-- <embed src="./media/amogus.mp3" loop="true" autostart="true" width="2" height="0"> -->
+    <audio src="./media/amogus.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+    <script type="text/javascript">
+        let chars = ["./media/char 1.png", "./media/char 2.png", "./media/char 3.png"];
+        let randChar = chars[Math.floor(Math.random() * chars.length)];
+        let lol = document.getElementById("chars")
+        lol.src = randChar
+
+        window.onload = function () {
+            document.getElementById("my_audio").play();
+        }
+        document.body.addEventListener('click', function () {document.getElementById("my_audio").play(); let chars = ["./media/char 1.png", "./media/char 2.png", "./media/char 3.png"];
+        let randChar = chars[Math.floor(Math.random() * chars.length)];
+        let lol = document.getElementById("chars")
+        lol.src = randChar});
+
+    </script>
+</body>
+
+</html>
