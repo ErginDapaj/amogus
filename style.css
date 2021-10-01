@@ -1,3 +1,6 @@
+html {
+    user-select: none;
+}
 body {
     background-image: url("./media/background-main.jpg");
     background-color: #cccccc;
